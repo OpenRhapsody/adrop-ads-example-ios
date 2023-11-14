@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E6E55C4AB1C43F067C1D5C0 /* Pods_adrop_ads_example_ios_objective_c.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB20D614EF592AED6AD5C10 /* Pods_adrop_ads_example_ios_objective_c.framework */; };
+		9C81CED039F4C698299E3E49 /* Pods_adrop_ads_example_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CEB47CA6E85669E358A70C /* Pods_adrop_ads_example_ios.framework */; };
+		B32C520F2B0370730051B354 /* adrop_service.json in Resources */ = {isa = PBXBuildFile; fileRef = B3DC36A72B035F9E006D5848 /* adrop_service.json */; };
+		B3DC36702B0352A4006D5848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC366F2B0352A4006D5848 /* AppDelegate.swift */; };
+		B3DC36722B0352A4006D5848 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC36712B0352A4006D5848 /* SceneDelegate.swift */; };
+		B3DC36742B0352A4006D5848 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC36732B0352A4006D5848 /* ViewController.swift */; };
+		B3DC36772B0352A4006D5848 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DC36752B0352A4006D5848 /* Main.storyboard */; };
+		B3DC36792B0352A5006D5848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DC36782B0352A5006D5848 /* Assets.xcassets */; };
+		B3DC367C2B0352A5006D5848 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DC367A2B0352A5006D5848 /* LaunchScreen.storyboard */; };
+		B3DC36842B03572D006D5848 /* adrop_service.json in Resources */ = {isa = PBXBuildFile; fileRef = B3DC36832B03572D006D5848 /* adrop_service.json */; };
+		B3DC368D2B035BF1006D5848 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC368C2B035BF1006D5848 /* AppDelegate.m */; };
+		B3DC36902B035BF1006D5848 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC368F2B035BF1006D5848 /* SceneDelegate.m */; };
+		B3DC36932B035BF1006D5848 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC36922B035BF1006D5848 /* ViewController.m */; };
+		B3DC36982B035BF2006D5848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DC36972B035BF2006D5848 /* Assets.xcassets */; };
+		B3DC369B2B035BF2006D5848 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DC36992B035BF2006D5848 /* LaunchScreen.storyboard */; };
+		B3DC369E2B035BF2006D5848 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC369D2B035BF2006D5848 /* main.m */; };
+		B3DC36AA2B035FE1006D5848 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DC36A82B035FA5006D5848 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A44541557C38D4F317A0528 /* Pods-adrop-ads-example-ios-objective-c.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adrop-ads-example-ios-objective-c.release.xcconfig"; path = "Target Support Files/Pods-adrop-ads-example-ios-objective-c/Pods-adrop-ads-example-ios-objective-c.release.xcconfig"; sourceTree = "<group>"; };
+		3121D4F83C394060BE8A632F /* Pods-adrop-ads-example-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adrop-ads-example-ios.debug.xcconfig"; path = "Target Support Files/Pods-adrop-ads-example-ios/Pods-adrop-ads-example-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		38CEB47CA6E85669E358A70C /* Pods_adrop_ads_example_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_adrop_ads_example_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84868695294916FDB5CA15B2 /* Pods-adrop-ads-example-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adrop-ads-example-ios.release.xcconfig"; path = "Target Support Files/Pods-adrop-ads-example-ios/Pods-adrop-ads-example-ios.release.xcconfig"; sourceTree = "<group>"; };
+		B3DC366C2B0352A4006D5848 /* adrop-ads-example-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "adrop-ads-example-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DC366F2B0352A4006D5848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3DC36712B0352A4006D5848 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B3DC36732B0352A4006D5848 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3DC36762B0352A4006D5848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3DC36782B0352A5006D5848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3DC367B2B0352A5006D5848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3DC367D2B0352A5006D5848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3DC36832B03572D006D5848 /* adrop_service.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adrop_service.json; sourceTree = "<group>"; };
+		B3DC36892B035BF1006D5848 /* adrop-ads-example-ios-objective-c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "adrop-ads-example-ios-objective-c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DC368B2B035BF1006D5848 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3DC368C2B035BF1006D5848 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B3DC368E2B035BF1006D5848 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B3DC368F2B035BF1006D5848 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B3DC36912B035BF1006D5848 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B3DC36922B035BF1006D5848 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B3DC36972B035BF2006D5848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3DC369A2B035BF2006D5848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3DC369C2B035BF2006D5848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3DC369D2B035BF2006D5848 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3DC36A72B035F9E006D5848 /* adrop_service.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adrop_service.json; sourceTree = "<group>"; };
+		B3DC36A92B035FA5006D5848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDB20D614EF592AED6AD5C10 /* Pods_adrop_ads_example_ios_objective_c.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_adrop_ads_example_ios_objective_c.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEE2A644412B805965A9522 /* Pods-adrop-ads-example-ios-objective-c.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adrop-ads-example-ios-objective-c.debug.xcconfig"; path = "Target Support Files/Pods-adrop-ads-example-ios-objective-c/Pods-adrop-ads-example-ios-objective-c.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3DC36692B0352A4006D5848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C81CED039F4C698299E3E49 /* Pods_adrop_ads_example_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3DC36862B035BF1006D5848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E6E55C4AB1C43F067C1D5C0 /* Pods_adrop_ads_example_ios_objective_c.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5ED59526D5429BBD9B1C60E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38CEB47CA6E85669E358A70C /* Pods_adrop_ads_example_ios.framework */,
+				BDB20D614EF592AED6AD5C10 /* Pods_adrop_ads_example_ios_objective_c.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66A9E08667FF18F435C543E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3121D4F83C394060BE8A632F /* Pods-adrop-ads-example-ios.debug.xcconfig */,
+				84868695294916FDB5CA15B2 /* Pods-adrop-ads-example-ios.release.xcconfig */,
+				CBEE2A644412B805965A9522 /* Pods-adrop-ads-example-ios-objective-c.debug.xcconfig */,
+				0A44541557C38D4F317A0528 /* Pods-adrop-ads-example-ios-objective-c.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B3DC36632B0352A4006D5848 = {
+			isa = PBXGroup;
+			children = (
+				B3DC366E2B0352A4006D5848 /* adrop-ads-example-ios */,
+				B3DC368A2B035BF1006D5848 /* adrop-ads-example-ios-objective-c */,
+				B3DC366D2B0352A4006D5848 /* Products */,
+				66A9E08667FF18F435C543E6 /* Pods */,
+				5ED59526D5429BBD9B1C60E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3DC366D2B0352A4006D5848 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC366C2B0352A4006D5848 /* adrop-ads-example-ios.app */,
+				B3DC36892B035BF1006D5848 /* adrop-ads-example-ios-objective-c.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3DC366E2B0352A4006D5848 /* adrop-ads-example-ios */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC366F2B0352A4006D5848 /* AppDelegate.swift */,
+				B3DC36712B0352A4006D5848 /* SceneDelegate.swift */,
+				B3DC36732B0352A4006D5848 /* ViewController.swift */,
+				B3DC36752B0352A4006D5848 /* Main.storyboard */,
+				B3DC36782B0352A5006D5848 /* Assets.xcassets */,
+				B3DC367A2B0352A5006D5848 /* LaunchScreen.storyboard */,
+				B3DC36832B03572D006D5848 /* adrop_service.json */,
+				B3DC367D2B0352A5006D5848 /* Info.plist */,
+			);
+			path = "adrop-ads-example-ios";
+			sourceTree = "<group>";
+		};
+		B3DC368A2B035BF1006D5848 /* adrop-ads-example-ios-objective-c */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC368B2B035BF1006D5848 /* AppDelegate.h */,
+				B3DC368C2B035BF1006D5848 /* AppDelegate.m */,
+				B3DC368E2B035BF1006D5848 /* SceneDelegate.h */,
+				B3DC368F2B035BF1006D5848 /* SceneDelegate.m */,
+				B3DC36912B035BF1006D5848 /* ViewController.h */,
+				B3DC36922B035BF1006D5848 /* ViewController.m */,
+				B3DC36A82B035FA5006D5848 /* Main.storyboard */,
+				B3DC36972B035BF2006D5848 /* Assets.xcassets */,
+				B3DC36992B035BF2006D5848 /* LaunchScreen.storyboard */,
+				B3DC36A72B035F9E006D5848 /* adrop_service.json */,
+				B3DC369C2B035BF2006D5848 /* Info.plist */,
+				B3DC369D2B035BF2006D5848 /* main.m */,
+			);
+			path = "adrop-ads-example-ios-objective-c";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3DC366B2B0352A4006D5848 /* adrop-ads-example-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3DC36802B0352A5006D5848 /* Build configuration list for PBXNativeTarget "adrop-ads-example-ios" */;
+			buildPhases = (
+				3EDD433C65F9B0C5CC5BBD71 /* [CP] Check Pods Manifest.lock */,
+				B3DC36682B0352A4006D5848 /* Sources */,
+				B3DC36692B0352A4006D5848 /* Frameworks */,
+				B3DC366A2B0352A4006D5848 /* Resources */,
+				BDDDD7A8B6E684F6310B33FF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "adrop-ads-example-ios";
+			productName = "adrop-ads-example-ios";
+			productReference = B3DC366C2B0352A4006D5848 /* adrop-ads-example-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3DC36882B035BF1006D5848 /* adrop-ads-example-ios-objective-c */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3DC369F2B035BF2006D5848 /* Build configuration list for PBXNativeTarget "adrop-ads-example-ios-objective-c" */;
+			buildPhases = (
+				4B902B86A00110D2B5DBF74F /* [CP] Check Pods Manifest.lock */,
+				B3DC36852B035BF1006D5848 /* Sources */,
+				B3DC36862B035BF1006D5848 /* Frameworks */,
+				B3DC36872B035BF1006D5848 /* Resources */,
+				8B6A9B84CE43CFB63DA37E26 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "adrop-ads-example-ios-objective-c";
+			productName = "adrop-ads-example-ios-objective-c";
+			productReference = B3DC36892B035BF1006D5848 /* adrop-ads-example-ios-objective-c.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3DC36642B0352A4006D5848 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B3DC366B2B0352A4006D5848 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					B3DC36882B035BF1006D5848 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = B3DC36672B0352A4006D5848 /* Build configuration list for PBXProject "adrop-ads-example-ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3DC36632B0352A4006D5848;
+			productRefGroup = B3DC366D2B0352A4006D5848 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3DC366B2B0352A4006D5848 /* adrop-ads-example-ios */,
+				B3DC36882B035BF1006D5848 /* adrop-ads-example-ios-objective-c */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3DC366A2B0352A4006D5848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3DC367C2B0352A5006D5848 /* LaunchScreen.storyboard in Resources */,
+				B3DC36792B0352A5006D5848 /* Assets.xcassets in Resources */,
+				B3DC36842B03572D006D5848 /* adrop_service.json in Resources */,
+				B3DC36772B0352A4006D5848 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3DC36872B035BF1006D5848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B32C520F2B0370730051B354 /* adrop_service.json in Resources */,
+				B3DC36AA2B035FE1006D5848 /* Main.storyboard in Resources */,
+				B3DC369B2B035BF2006D5848 /* LaunchScreen.storyboard in Resources */,
+				B3DC36982B035BF2006D5848 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EDD433C65F9B0C5CC5BBD71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-adrop-ads-example-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B902B86A00110D2B5DBF74F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-adrop-ads-example-ios-objective-c-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B6A9B84CE43CFB63DA37E26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios-objective-c/Pods-adrop-ads-example-ios-objective-c-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios-objective-c/Pods-adrop-ads-example-ios-objective-c-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios-objective-c/Pods-adrop-ads-example-ios-objective-c-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDDDD7A8B6E684F6310B33FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios/Pods-adrop-ads-example-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios/Pods-adrop-ads-example-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios/Pods-adrop-ads-example-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3DC36682B0352A4006D5848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3DC36742B0352A4006D5848 /* ViewController.swift in Sources */,
+				B3DC36702B0352A4006D5848 /* AppDelegate.swift in Sources */,
+				B3DC36722B0352A4006D5848 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3DC36852B035BF1006D5848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3DC36932B035BF1006D5848 /* ViewController.m in Sources */,
+				B3DC368D2B035BF1006D5848 /* AppDelegate.m in Sources */,
+				B3DC369E2B035BF2006D5848 /* main.m in Sources */,
+				B3DC36902B035BF1006D5848 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B3DC36752B0352A4006D5848 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3DC36762B0352A4006D5848 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3DC367A2B0352A5006D5848 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3DC367B2B0352A5006D5848 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B3DC36992B035BF2006D5848 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3DC369A2B035BF2006D5848 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B3DC36A82B035FA5006D5848 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3DC36A92B035FA5006D5848 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3DC367E2B0352A5006D5848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3DC367F2B0352A5006D5848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3DC36812B0352A5006D5848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3121D4F83C394060BE8A632F /* Pods-adrop-ads-example-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WZNG32M69A;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "adrop-ads-example-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.openrhapsody.adrop-ads-example-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3DC36822B0352A5006D5848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84868695294916FDB5CA15B2 /* Pods-adrop-ads-example-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WZNG32M69A;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "adrop-ads-example-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.openrhapsody.adrop-ads-example-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3DC36A02B035BF2006D5848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBEE2A644412B805965A9522 /* Pods-adrop-ads-example-ios-objective-c.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WZNG32M69A;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "adrop-ads-example-ios-objective-c/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.openrhapsody.adrop-ads-example-ios-objective-c";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3DC36A12B035BF2006D5848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A44541557C38D4F317A0528 /* Pods-adrop-ads-example-ios-objective-c.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WZNG32M69A;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "adrop-ads-example-ios-objective-c/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.openrhapsody.adrop-ads-example-ios-objective-c";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3DC36672B0352A4006D5848 /* Build configuration list for PBXProject "adrop-ads-example-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3DC367E2B0352A5006D5848 /* Debug */,
+				B3DC367F2B0352A5006D5848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3DC36802B0352A5006D5848 /* Build configuration list for PBXNativeTarget "adrop-ads-example-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3DC36812B0352A5006D5848 /* Debug */,
+				B3DC36822B0352A5006D5848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3DC369F2B035BF2006D5848 /* Build configuration list for PBXNativeTarget "adrop-ads-example-ios-objective-c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3DC36A02B035BF2006D5848 /* Debug */,
+				B3DC36A12B035BF2006D5848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3DC36642B0352A4006D5848 /* Project object */;
+}

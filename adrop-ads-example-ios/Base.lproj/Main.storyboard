@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="adrop_ads_example_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Adrop!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrX-HI-GP8">
+                                <rect key="frame" x="99.666666666666686" y="91" width="194" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xim-JB-k5L">
+                                <rect key="frame" x="0.0" y="768" width="393" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad Container View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLd-RH-R4E">
+                                        <rect key="frame" x="122.66666666666669" y="23.666666666666629" width="148" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="sLd-RH-R4E" firstAttribute="centerY" secondItem="Xim-JB-k5L" secondAttribute="centerY" constant="-8" id="FUh-6c-47g"/>
+                                    <constraint firstItem="sLd-RH-R4E" firstAttribute="centerX" secondItem="Xim-JB-k5L" secondAttribute="centerX" id="RN6-Qp-Q1z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xim-JB-k5L" secondAttribute="top" constant="50" id="978-eA-Jfh"/>
+                            <constraint firstItem="lrX-HI-GP8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="F6P-O2-gpn"/>
+                            <constraint firstItem="Xim-JB-k5L" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="S0d-E2-6o9"/>
+                            <constraint firstItem="lrX-HI-GP8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="bta-lv-pQf"/>
+                            <constraint firstAttribute="bottom" secondItem="Xim-JB-k5L" secondAttribute="bottom" id="dcu-HX-I9i"/>
+                            <constraint firstItem="Xim-JB-k5L" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="f7G-Yn-qbB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="adContainer" destination="Xim-JB-k5L" id="9n6-I0-SH1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-69.465648854961827" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
