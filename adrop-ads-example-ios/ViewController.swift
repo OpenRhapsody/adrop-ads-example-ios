@@ -35,7 +35,7 @@ extension ViewController: AdropBannerDelegate {
     }
     
     func onAdFailedToReceive(_ banner: AdropAds.AdropBanner, _ error: AdropAds.AdropErrorCode) {
-        print("onAdFailedToReceive \(error)")
+        print("onAdFailedToReceive \(AdropErrorCodeToString(code: error))")
     }
 }
 

@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8E6E55C4AB1C43F067C1D5C0 /* Pods_adrop_ads_example_ios_objective_c.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB20D614EF592AED6AD5C10 /* Pods_adrop_ads_example_ios_objective_c.framework */; };
+		9BBD33E56FA120D428EED452 /* Pods_adrop_ads_example_ios_swiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD5D9713025431809CAF6D9 /* Pods_adrop_ads_example_ios_swiftUI.framework */; };
 		9C81CED039F4C698299E3E49 /* Pods_adrop_ads_example_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CEB47CA6E85669E358A70C /* Pods_adrop_ads_example_ios.framework */; };
+		ABE6114C2B0482E7007AF8A4 /* adrop_ads_example_ios_swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE6114B2B0482E7007AF8A4 /* adrop_ads_example_ios_swiftUIApp.swift */; };
+		ABE6114E2B0482E7007AF8A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE6114D2B0482E7007AF8A4 /* ContentView.swift */; };
+		ABE611502B0482E8007AF8A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE6114F2B0482E8007AF8A4 /* Assets.xcassets */; };
+		ABE611532B0482E8007AF8A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE611522B0482E8007AF8A4 /* Preview Assets.xcassets */; };
+		ABE611582B048676007AF8A4 /* adrop_service.json in Resources */ = {isa = PBXBuildFile; fileRef = ABE611572B048676007AF8A4 /* adrop_service.json */; };
 		B32C520F2B0370730051B354 /* adrop_service.json in Resources */ = {isa = PBXBuildFile; fileRef = B3DC36A72B035F9E006D5848 /* adrop_service.json */; };
 		B3DC36702B0352A4006D5848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC366F2B0352A4006D5848 /* AppDelegate.swift */; };
 		B3DC36722B0352A4006D5848 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC36712B0352A4006D5848 /* SceneDelegate.swift */; };
@@ -30,7 +36,14 @@
 		0A44541557C38D4F317A0528 /* Pods-adrop-ads-example-ios-objective-c.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adrop-ads-example-ios-objective-c.release.xcconfig"; path = "Target Support Files/Pods-adrop-ads-example-ios-objective-c/Pods-adrop-ads-example-ios-objective-c.release.xcconfig"; sourceTree = "<group>"; };
 		3121D4F83C394060BE8A632F /* Pods-adrop-ads-example-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adrop-ads-example-ios.debug.xcconfig"; path = "Target Support Files/Pods-adrop-ads-example-ios/Pods-adrop-ads-example-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		38CEB47CA6E85669E358A70C /* Pods_adrop_ads_example_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_adrop_ads_example_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD5D9713025431809CAF6D9 /* Pods_adrop_ads_example_ios_swiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_adrop_ads_example_ios_swiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84868695294916FDB5CA15B2 /* Pods-adrop-ads-example-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adrop-ads-example-ios.release.xcconfig"; path = "Target Support Files/Pods-adrop-ads-example-ios/Pods-adrop-ads-example-ios.release.xcconfig"; sourceTree = "<group>"; };
+		ABE611492B0482E7007AF8A4 /* adrop-ads-example-ios-swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "adrop-ads-example-ios-swiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE6114B2B0482E7007AF8A4 /* adrop_ads_example_ios_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adrop_ads_example_ios_swiftUIApp.swift; sourceTree = "<group>"; };
+		ABE6114D2B0482E7007AF8A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ABE6114F2B0482E8007AF8A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABE611522B0482E8007AF8A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABE611572B048676007AF8A4 /* adrop_service.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adrop_service.json; sourceTree = "<group>"; };
 		B3DC366C2B0352A4006D5848 /* adrop-ads-example-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "adrop-ads-example-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DC366F2B0352A4006D5848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3DC36712B0352A4006D5848 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,11 +66,21 @@
 		B3DC369D2B035BF2006D5848 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3DC36A72B035F9E006D5848 /* adrop_service.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adrop_service.json; sourceTree = "<group>"; };
 		B3DC36A92B035FA5006D5848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9EDC3D806450BACC4A55551 /* Pods-adrop-ads-example-ios-swiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adrop-ads-example-ios-swiftUI.release.xcconfig"; path = "Target Support Files/Pods-adrop-ads-example-ios-swiftUI/Pods-adrop-ads-example-ios-swiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		BDB20D614EF592AED6AD5C10 /* Pods_adrop_ads_example_ios_objective_c.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_adrop_ads_example_ios_objective_c.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEE2A644412B805965A9522 /* Pods-adrop-ads-example-ios-objective-c.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adrop-ads-example-ios-objective-c.debug.xcconfig"; path = "Target Support Files/Pods-adrop-ads-example-ios-objective-c/Pods-adrop-ads-example-ios-objective-c.debug.xcconfig"; sourceTree = "<group>"; };
+		DBED2F7D34465AF319722047 /* Pods-adrop-ads-example-ios-swiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adrop-ads-example-ios-swiftUI.debug.xcconfig"; path = "Target Support Files/Pods-adrop-ads-example-ios-swiftUI/Pods-adrop-ads-example-ios-swiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		ABE611462B0482E7007AF8A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BBD33E56FA120D428EED452 /* Pods_adrop_ads_example_ios_swiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3DC36692B0352A4006D5848 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,6 +105,7 @@
 			children = (
 				38CEB47CA6E85669E358A70C /* Pods_adrop_ads_example_ios.framework */,
 				BDB20D614EF592AED6AD5C10 /* Pods_adrop_ads_example_ios_objective_c.framework */,
+				5DD5D9713025431809CAF6D9 /* Pods_adrop_ads_example_ios_swiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,8 +117,30 @@
 				84868695294916FDB5CA15B2 /* Pods-adrop-ads-example-ios.release.xcconfig */,
 				CBEE2A644412B805965A9522 /* Pods-adrop-ads-example-ios-objective-c.debug.xcconfig */,
 				0A44541557C38D4F317A0528 /* Pods-adrop-ads-example-ios-objective-c.release.xcconfig */,
+				DBED2F7D34465AF319722047 /* Pods-adrop-ads-example-ios-swiftUI.debug.xcconfig */,
+				B9EDC3D806450BACC4A55551 /* Pods-adrop-ads-example-ios-swiftUI.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		ABE6114A2B0482E7007AF8A4 /* adrop-ads-example-ios-swiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				ABE6114B2B0482E7007AF8A4 /* adrop_ads_example_ios_swiftUIApp.swift */,
+				ABE6114D2B0482E7007AF8A4 /* ContentView.swift */,
+				ABE6114F2B0482E8007AF8A4 /* Assets.xcassets */,
+				ABE611512B0482E8007AF8A4 /* Preview Content */,
+				ABE611572B048676007AF8A4 /* adrop_service.json */,
+			);
+			path = "adrop-ads-example-ios-swiftUI";
+			sourceTree = "<group>";
+		};
+		ABE611512B0482E8007AF8A4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ABE611522B0482E8007AF8A4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		B3DC36632B0352A4006D5848 = {
@@ -102,6 +148,7 @@
 			children = (
 				B3DC366E2B0352A4006D5848 /* adrop-ads-example-ios */,
 				B3DC368A2B035BF1006D5848 /* adrop-ads-example-ios-objective-c */,
+				ABE6114A2B0482E7007AF8A4 /* adrop-ads-example-ios-swiftUI */,
 				B3DC366D2B0352A4006D5848 /* Products */,
 				66A9E08667FF18F435C543E6 /* Pods */,
 				5ED59526D5429BBD9B1C60E1 /* Frameworks */,
@@ -113,6 +160,7 @@
 			children = (
 				B3DC366C2B0352A4006D5848 /* adrop-ads-example-ios.app */,
 				B3DC36892B035BF1006D5848 /* adrop-ads-example-ios-objective-c.app */,
+				ABE611492B0482E7007AF8A4 /* adrop-ads-example-ios-swiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,6 +202,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		ABE611482B0482E7007AF8A4 /* adrop-ads-example-ios-swiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABE611562B0482E8007AF8A4 /* Build configuration list for PBXNativeTarget "adrop-ads-example-ios-swiftUI" */;
+			buildPhases = (
+				CEBF957FD9E97450113A946B /* [CP] Check Pods Manifest.lock */,
+				ABE611452B0482E7007AF8A4 /* Sources */,
+				ABE611462B0482E7007AF8A4 /* Frameworks */,
+				ABE611472B0482E7007AF8A4 /* Resources */,
+				F09186F5193A9DB0FF00D7F4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "adrop-ads-example-ios-swiftUI";
+			productName = "adrop-ads-example-ios-swiftUI";
+			productReference = ABE611492B0482E7007AF8A4 /* adrop-ads-example-ios-swiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B3DC366B2B0352A4006D5848 /* adrop-ads-example-ios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3DC36802B0352A5006D5848 /* Build configuration list for PBXNativeTarget "adrop-ads-example-ios" */;
@@ -162,7 +229,7 @@
 				B3DC36682B0352A4006D5848 /* Sources */,
 				B3DC36692B0352A4006D5848 /* Frameworks */,
 				B3DC366A2B0352A4006D5848 /* Resources */,
-				BDDDD7A8B6E684F6310B33FF /* [CP] Embed Pods Frameworks */,
+				BA2D77ECB51F3CCF33850783 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,7 +248,7 @@
 				B3DC36852B035BF1006D5848 /* Sources */,
 				B3DC36862B035BF1006D5848 /* Frameworks */,
 				B3DC36872B035BF1006D5848 /* Resources */,
-				8B6A9B84CE43CFB63DA37E26 /* [CP] Embed Pods Frameworks */,
+				2B2F6DCA163E2BB53CECBE74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,6 +269,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					ABE611482B0482E7007AF8A4 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 					B3DC366B2B0352A4006D5848 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -225,11 +295,22 @@
 			targets = (
 				B3DC366B2B0352A4006D5848 /* adrop-ads-example-ios */,
 				B3DC36882B035BF1006D5848 /* adrop-ads-example-ios-objective-c */,
+				ABE611482B0482E7007AF8A4 /* adrop-ads-example-ios-swiftUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		ABE611472B0482E7007AF8A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE611532B0482E8007AF8A4 /* Preview Assets.xcassets in Resources */,
+				ABE611502B0482E8007AF8A4 /* Assets.xcassets in Resources */,
+				ABE611582B048676007AF8A4 /* adrop_service.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3DC366A2B0352A4006D5848 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +336,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2B2F6DCA163E2BB53CECBE74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios-objective-c/Pods-adrop-ads-example-ios-objective-c-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios-objective-c/Pods-adrop-ads-example-ios-objective-c-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios-objective-c/Pods-adrop-ads-example-ios-objective-c-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3EDD433C65F9B0C5CC5BBD71 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,24 +397,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8B6A9B84CE43CFB63DA37E26 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios-objective-c/Pods-adrop-ads-example-ios-objective-c-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios-objective-c/Pods-adrop-ads-example-ios-objective-c-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios-objective-c/Pods-adrop-ads-example-ios-objective-c-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BDDDD7A8B6E684F6310B33FF /* [CP] Embed Pods Frameworks */ = {
+		BA2D77ECB51F3CCF33850783 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -333,9 +414,57 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios/Pods-adrop-ads-example-ios-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CEBF957FD9E97450113A946B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-adrop-ads-example-ios-swiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F09186F5193A9DB0FF00D7F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios-swiftUI/Pods-adrop-ads-example-ios-swiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios-swiftUI/Pods-adrop-ads-example-ios-swiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios-swiftUI/Pods-adrop-ads-example-ios-swiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		ABE611452B0482E7007AF8A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE6114E2B0482E7007AF8A4 /* ContentView.swift in Sources */,
+				ABE6114C2B0482E7007AF8A4 /* adrop_ads_example_ios_swiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3DC36682B0352A4006D5848 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,6 +524,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		ABE611542B0482E8007AF8A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBED2F7D34465AF319722047 /* Pods-adrop-ads-example-ios-swiftUI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"adrop-ads-example-ios-swiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = WZNG32M69A;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.adrop..adrop-ads-example-ios-swiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABE611552B0482E8007AF8A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9EDC3D806450BACC4A55551 /* Pods-adrop-ads-example-ios-swiftUI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"adrop-ads-example-ios-swiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = WZNG32M69A;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.adrop..adrop-ads-example-ios-swiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B3DC367E2B0352A5006D5848 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -653,6 +846,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		ABE611562B0482E8007AF8A4 /* Build configuration list for PBXNativeTarget "adrop-ads-example-ios-swiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABE611542B0482E8007AF8A4 /* Debug */,
+				ABE611552B0482E8007AF8A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B3DC36672B0352A4006D5848 /* Build configuration list for PBXProject "adrop-ads-example-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
