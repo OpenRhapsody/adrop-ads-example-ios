@@ -16,6 +16,12 @@
 		ABE611532B0482E8007AF8A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE611522B0482E8007AF8A4 /* Preview Assets.xcassets */; };
 		ABE611582B048676007AF8A4 /* adrop_service.json in Resources */ = {isa = PBXBuildFile; fileRef = ABE611572B048676007AF8A4 /* adrop_service.json */; };
 		B32C520F2B0370730051B354 /* adrop_service.json in Resources */ = {isa = PBXBuildFile; fileRef = B3DC36A72B035F9E006D5848 /* adrop_service.json */; };
+		B36A475E2B57A775002ADE23 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36A475D2B57A775002ADE23 /* BannerViewController.swift */; };
+		B36A47602B57AC18002ADE23 /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36A475F2B57AC18002ADE23 /* InterstitialViewController.swift */; };
+		B36A47622B57B41E002ADE23 /* RewardedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36A47612B57B41E002ADE23 /* RewardedViewController.swift */; };
+		B36A47642B57C3B6002ADE23 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A47632B57C3B6002ADE23 /* BannerViewController.m */; };
+		B36A47672B57C704002ADE23 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A47662B57C704002ADE23 /* InterstitialViewController.m */; };
+		B36A476B2B57C7DB002ADE23 /* RewardedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A476A2B57C7DB002ADE23 /* RewardedViewController.m */; };
 		B3DC36702B0352A4006D5848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC366F2B0352A4006D5848 /* AppDelegate.swift */; };
 		B3DC36722B0352A4006D5848 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC36712B0352A4006D5848 /* SceneDelegate.swift */; };
 		B3DC36742B0352A4006D5848 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC36732B0352A4006D5848 /* ViewController.swift */; };
@@ -44,6 +50,15 @@
 		ABE6114F2B0482E8007AF8A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABE611522B0482E8007AF8A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ABE611572B048676007AF8A4 /* adrop_service.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adrop_service.json; sourceTree = "<group>"; };
+		B36A475D2B57A775002ADE23 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
+		B36A475F2B57AC18002ADE23 /* InterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
+		B36A47612B57B41E002ADE23 /* RewardedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedViewController.swift; sourceTree = "<group>"; };
+		B36A47632B57C3B6002ADE23 /* BannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		B36A47652B57C49D002ADE23 /* BannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		B36A47662B57C704002ADE23 /* InterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
+		B36A47682B57C712002ADE23 /* InterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
+		B36A47692B57C7CE002ADE23 /* RewardedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardedViewController.h; sourceTree = "<group>"; };
+		B36A476A2B57C7DB002ADE23 /* RewardedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewardedViewController.m; sourceTree = "<group>"; };
 		B3DC366C2B0352A4006D5848 /* adrop-ads-example-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "adrop-ads-example-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DC366F2B0352A4006D5848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3DC36712B0352A4006D5848 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +186,9 @@
 				B3DC366F2B0352A4006D5848 /* AppDelegate.swift */,
 				B3DC36712B0352A4006D5848 /* SceneDelegate.swift */,
 				B3DC36732B0352A4006D5848 /* ViewController.swift */,
+				B36A475D2B57A775002ADE23 /* BannerViewController.swift */,
+				B36A475F2B57AC18002ADE23 /* InterstitialViewController.swift */,
+				B36A47612B57B41E002ADE23 /* RewardedViewController.swift */,
 				B3DC36752B0352A4006D5848 /* Main.storyboard */,
 				B3DC36782B0352A5006D5848 /* Assets.xcassets */,
 				B3DC367A2B0352A5006D5848 /* LaunchScreen.storyboard */,
@@ -189,6 +207,12 @@
 				B3DC368F2B035BF1006D5848 /* SceneDelegate.m */,
 				B3DC36912B035BF1006D5848 /* ViewController.h */,
 				B3DC36922B035BF1006D5848 /* ViewController.m */,
+				B36A47652B57C49D002ADE23 /* BannerViewController.h */,
+				B36A47632B57C3B6002ADE23 /* BannerViewController.m */,
+				B36A47682B57C712002ADE23 /* InterstitialViewController.h */,
+				B36A47662B57C704002ADE23 /* InterstitialViewController.m */,
+				B36A47692B57C7CE002ADE23 /* RewardedViewController.h */,
+				B36A476A2B57C7DB002ADE23 /* RewardedViewController.m */,
 				B3DC36A82B035FA5006D5848 /* Main.storyboard */,
 				B3DC36972B035BF2006D5848 /* Assets.xcassets */,
 				B3DC36992B035BF2006D5848 /* LaunchScreen.storyboard */,
@@ -471,7 +495,10 @@
 			files = (
 				B3DC36742B0352A4006D5848 /* ViewController.swift in Sources */,
 				B3DC36702B0352A4006D5848 /* AppDelegate.swift in Sources */,
+				B36A47622B57B41E002ADE23 /* RewardedViewController.swift in Sources */,
+				B36A475E2B57A775002ADE23 /* BannerViewController.swift in Sources */,
 				B3DC36722B0352A4006D5848 /* SceneDelegate.swift in Sources */,
+				B36A47602B57AC18002ADE23 /* InterstitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,8 +508,11 @@
 			files = (
 				B3DC36932B035BF1006D5848 /* ViewController.m in Sources */,
 				B3DC368D2B035BF1006D5848 /* AppDelegate.m in Sources */,
+				B36A476B2B57C7DB002ADE23 /* RewardedViewController.m in Sources */,
 				B3DC369E2B035BF2006D5848 /* main.m in Sources */,
 				B3DC36902B035BF1006D5848 /* SceneDelegate.m in Sources */,
+				B36A47672B57C704002ADE23 /* InterstitialViewController.m in Sources */,
+				B36A47642B57C3B6002ADE23 /* BannerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

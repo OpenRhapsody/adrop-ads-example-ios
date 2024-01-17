@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-@import AdropAds;
+#import <AdropAds/AdropAds.h>
 
 @interface AppDelegate ()
 
