@@ -36,6 +36,9 @@
 		B3DC369B2B035BF2006D5848 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DC36992B035BF2006D5848 /* LaunchScreen.storyboard */; };
 		B3DC369E2B035BF2006D5848 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DC369D2B035BF2006D5848 /* main.m */; };
 		B3DC36AA2B035FE1006D5848 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DC36A82B035FA5006D5848 /* Main.storyboard */; };
+		B3F9C32B2B7B30C5005AF2DA /* NativeAdFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F9C32A2B7B30C5005AF2DA /* NativeAdFeedViewController.swift */; };
+		B3F9C32D2B7C7641005AF2DA /* FeedContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F9C32C2B7C7641005AF2DA /* FeedContentTableViewCell.swift */; };
+		B3F9C3302B7C7A99005AF2DA /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F9C32F2B7C7A99005AF2DA /* UIImageView+URL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +84,9 @@
 		B3DC369D2B035BF2006D5848 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3DC36A72B035F9E006D5848 /* adrop_service.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adrop_service.json; sourceTree = "<group>"; };
 		B3DC36A92B035FA5006D5848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3F9C32A2B7B30C5005AF2DA /* NativeAdFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdFeedViewController.swift; sourceTree = "<group>"; };
+		B3F9C32C2B7C7641005AF2DA /* FeedContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedContentTableViewCell.swift; sourceTree = "<group>"; };
+		B3F9C32F2B7C7A99005AF2DA /* UIImageView+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
 		B9EDC3D806450BACC4A55551 /* Pods-adrop-ads-example-ios-swiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adrop-ads-example-ios-swiftUI.release.xcconfig"; path = "Target Support Files/Pods-adrop-ads-example-ios-swiftUI/Pods-adrop-ads-example-ios-swiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		BDB20D614EF592AED6AD5C10 /* Pods_adrop_ads_example_ios_objective_c.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_adrop_ads_example_ios_objective_c.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEE2A644412B805965A9522 /* Pods-adrop-ads-example-ios-objective-c.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adrop-ads-example-ios-objective-c.debug.xcconfig"; path = "Target Support Files/Pods-adrop-ads-example-ios-objective-c/Pods-adrop-ads-example-ios-objective-c.debug.xcconfig"; sourceTree = "<group>"; };
@@ -183,12 +189,14 @@
 		B3DC366E2B0352A4006D5848 /* adrop-ads-example-ios */ = {
 			isa = PBXGroup;
 			children = (
+				B3F9C32E2B7C7A8B005AF2DA /* extensions */,
 				B3DC366F2B0352A4006D5848 /* AppDelegate.swift */,
 				B3DC36712B0352A4006D5848 /* SceneDelegate.swift */,
 				B3DC36732B0352A4006D5848 /* ViewController.swift */,
 				B36A475D2B57A775002ADE23 /* BannerViewController.swift */,
 				B36A475F2B57AC18002ADE23 /* InterstitialViewController.swift */,
 				B36A47612B57B41E002ADE23 /* RewardedViewController.swift */,
+				B3F9C3292B7B2C9E005AF2DA /* native-ad */,
 				B3DC36752B0352A4006D5848 /* Main.storyboard */,
 				B3DC36782B0352A5006D5848 /* Assets.xcassets */,
 				B3DC367A2B0352A5006D5848 /* LaunchScreen.storyboard */,
@@ -221,6 +229,23 @@
 				B3DC369D2B035BF2006D5848 /* main.m */,
 			);
 			path = "adrop-ads-example-ios-objective-c";
+			sourceTree = "<group>";
+		};
+		B3F9C3292B7B2C9E005AF2DA /* native-ad */ = {
+			isa = PBXGroup;
+			children = (
+				B3F9C32A2B7B30C5005AF2DA /* NativeAdFeedViewController.swift */,
+				B3F9C32C2B7C7641005AF2DA /* FeedContentTableViewCell.swift */,
+			);
+			path = "native-ad";
+			sourceTree = "<group>";
+		};
+		B3F9C32E2B7C7A8B005AF2DA /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B3F9C32F2B7C7A99005AF2DA /* UIImageView+URL.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,9 +521,12 @@
 				B3DC36742B0352A4006D5848 /* ViewController.swift in Sources */,
 				B3DC36702B0352A4006D5848 /* AppDelegate.swift in Sources */,
 				B36A47622B57B41E002ADE23 /* RewardedViewController.swift in Sources */,
+				B3F9C32D2B7C7641005AF2DA /* FeedContentTableViewCell.swift in Sources */,
 				B36A475E2B57A775002ADE23 /* BannerViewController.swift in Sources */,
+				B3F9C3302B7C7A99005AF2DA /* UIImageView+URL.swift in Sources */,
 				B3DC36722B0352A4006D5848 /* SceneDelegate.swift in Sources */,
 				B36A47602B57AC18002ADE23 /* InterstitialViewController.swift in Sources */,
+				B3F9C32B2B7B30C5005AF2DA /* NativeAdFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

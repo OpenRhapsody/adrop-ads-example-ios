@@ -6,8 +6,7 @@ target 'adrop-ads-example-ios' do
   use_frameworks!
 
   # Pods for adrop-ads-example-ios
-  pod "adrop-ads"
-
+  pod "adrop-ads", "~> 0.3.0"
 end
 
 target 'adrop-ads-example-ios-swiftUI' do
@@ -15,7 +14,7 @@ target 'adrop-ads-example-ios-swiftUI' do
   use_frameworks!
 
   # Pods for adrop-ads-example-ios
-  pod "adrop-ads"
+  pod "adrop-ads", "~> 0.3.0"
 end
 
 target 'adrop-ads-example-ios-objective-c' do
@@ -23,6 +22,5 @@ target 'adrop-ads-example-ios-objective-c' do
   use_frameworks!
 
   # Pods for adrop-ads-example-ios-objective-c
-  pod "adrop-ads"
-
+  pod "adrop-ads", "~> 0.3.0"
 end
