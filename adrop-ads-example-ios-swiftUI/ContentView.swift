@@ -30,6 +30,7 @@ class AdropBannerWrapper: AdropBannerDelegate {
 }
 
 class AdropInterstitialAdWrapper: AdropInterstitialAdDelegate {
+    var interstitialAd: AdropInterstitialAd?
     var errorHandler: (String) -> Void
     
     init(_ unitId: String, handler: @escaping (_ error: String) -> Void) {
@@ -75,8 +76,6 @@ class AdropInterstitialAdWrapper: AdropInterstitialAdDelegate {
     func onAdDidDismissFullScreen(_ ad: AdropAds.AdropInterstitialAd) {
         print("onAdDidDismissFullScreen")
     }
-    
-    var interstitialAd: AdropInterstitialAd?
     
     func load() {
         interstitialAd?.delegate = self
@@ -146,159 +145,34 @@ class AdropRewardedAdWrapper: AdropRewardedAdDelegate {
     }
 }
 
-
-@available(iOS 14.0, *)
-struct BannerView: View {
-    var adropBannerWrapper = AdropBannerWrapper()
-    var body: some View {
-        NavigationView {
-            ZStack{
-                VStack {
-                    Button {
-                        adropBannerWrapper.bannerRep.banner.load()
-                    } label: {
-                        Text("requestAd")
-                    }
-                    .padding(.all)
-                    Spacer()
-                }
-                VStack {
-                    Spacer()
-                    adropBannerWrapper.bannerRep.frame(height: 80)
-                }
-            }
-        }
-        .navigationTitle("Banner Example")
-    }
-}
-
-@available(iOS 14.0, *)
-struct InterstitialAdView: View {
-    @State var adropInterstitialAdWrapper :AdropInterstitialAdWrapper? = nil
-    
-    var body: some View {
-        NavigationView {
-            VStack {
-                Button {
-                    adropInterstitialAdWrapper = AdropInterstitialAdWrapper("PUBLIC_TEST_UNIT_ID_INTERSTITIAL") { _ in }
-                    adropInterstitialAdWrapper?.load()
-                } label: {
-                    Text("load")
-                }
-                .padding(.all)
-                
-                Button {
-                    adropInterstitialAdWrapper?.show(fromRootViewController: (UIApplication.shared.windows.first?.rootViewController)!)
-                } label: {
-                    Text("show")
-                }
-                .padding(.all)
-                Spacer()
-           
-            }
-            .navigationTitle("InterstitialAd Example")
-        }
-    }
-}
-
-@available(iOS 14.0, *)
-struct RewardedAdView: View {
-    @State var adropRewardedAdWrapper :AdropRewardedAdWrapper? = nil
-   
-    var body: some View {
-        NavigationView {
-            VStack {
-                Button {
-                    adropRewardedAdWrapper = AdropRewardedAdWrapper("PUBLIC_TEST_UNIT_ID_REWARDED") { _ in }
-                    adropRewardedAdWrapper?.load()
-                } label: {
-                    Text("load")
-                }
-                .padding(.all)
-                
-                Button {
-                    adropRewardedAdWrapper?.show(fromRootViewController: (UIApplication.shared.windows.first?.rootViewController)!){
-                        type, amount in
-                        print("earned reward!11(type: \(type) amount: \(amount))")
-                    }
-                } label: {
-                    Text("show")
-                }
-                .padding(.all)
-                Spacer()
-           
-            }
-            .navigationTitle("RewardedAd Example")
-        }
-    }
-}
-
-@available(iOS 14.0, *)
 struct ContentView: View {
-    @State private var showBanner = false
-    @State private var showIntersitialAd = false
-    @State private var showRewardedAd = false
-    
     var body: some View {
-        NavigationView {
-            VStack {
-                Spacer()
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("Adrop Ads Example")
-    
-                Button {
-                    Adrop.initialize(production: false)
-                } label: {
-                    Text("initialize")
+        NavigationStack {
+            List {
+                NavigationLink("Banner Example", value: "Banner")
+                NavigationLink("Interstitial Ad Example", value: "Interstitial")
+                NavigationLink("Rewarded Ad Example", value: "Rewarded")
+                NavigationLink("Native Ad Example", value: "Native")
+                NavigationLink("Popup Ad Example", value: "Popup")
+            }
+            .navigationTitle("Adrop Examples")
+            .navigationDestination(for: String.self) { value in
+                switch value {
+                case "Banner":
+                    BannerView()
+                case "Interstitial":
+                    InterstitialAdView()
+                case "Rewarded":
+                    RewardedAdView()
+                case "Native":
+                    NativeAdView()
+                case "Popup":
+                    PopupAdView()
+                default:
+                    EmptyView()
                 }
-                .padding(.all)
-                
-                
-                Button {
-                    showBanner.toggle()
-                } label: {
-                    Text("Banner Example")
-                }
-                .padding(.all)
-                
-                Button {
-                    showIntersitialAd.toggle()
-                } label: {
-                    Text("IntersitialAd Example")
-                }
-                .padding(.all)
-                
-                Button {
-                    showRewardedAd.toggle()
-                } label: {
-                    Text("RewardedAd Example")
-                }
-                .padding(.all)
-                
-                Spacer()
-                NavigationLink(
-                    destination: BannerView(),
-                    isActive: $showBanner,
-                    label: {EmptyView()}
-                )
-                .hidden()
-                NavigationLink(
-                    destination: InterstitialAdView(),
-                    isActive: $showIntersitialAd,
-                    label: {EmptyView()}
-                )
-                .hidden()
-                NavigationLink(
-                    destination: RewardedAdView(),
-                    isActive: $showRewardedAd,
-                    label: {EmptyView()}
-                )
-                .hidden()
             }
         }
-        .navigationTitle("Adrop Ads Example")
     }
 }
 

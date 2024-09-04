@@ -8,12 +8,26 @@
 import SwiftUI
 import AdropAds
 
-@available(iOS 14.0, *)
 @main
 struct adrop_ads_example_ios_swiftUIApp: App {
+    init() {
+        Adrop.initialize(production: false)
+    }
+    
+    @State private var showMainView = false
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if showMainView {
+                ContentView()
+                    .buttonStyle(.borderedProminent)
+            } else {
+                SplashAdView {
+                    showMainView = true
+                }
+                .edgesIgnoringSafeArea(.all)
+                .zIndex(0)
+            }
+            
         }
     }
 }
