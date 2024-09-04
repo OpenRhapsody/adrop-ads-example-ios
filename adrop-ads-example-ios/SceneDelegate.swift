@@ -6,15 +6,25 @@
 //
 
 import UIKit
+import AdropAds
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        self.window = UIWindow(windowScene: windowScene)
+        
+        let splashViewController = AdropSplashAdViewController(unitId: "PUBLIC_TEST_UNIT_ID_SPLASH")
+        splashViewController.backgroundColor = .systemBackground
+        splashViewController.logoImage = UIImage(named: "splash_logo")
+        splashViewController.mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        splashViewController.displayDuration = 3
+        splashViewController.delegate = self
+        
+        self.window?.rootViewController = splashViewController
+        self.window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -43,5 +53,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+    }
+}
+
+extension SceneDelegate: AdropSplashAdDelegate {
+    func onAdReceived(_ ad: AdropAds.AdropSplashAd) {
+        print("onAdReceived \(ad.unitId) \(ad.creativeId)")
+    }
+    
+    func onAdFailedToReceive(_ ad: AdropAds.AdropSplashAd, _ errorCode: AdropAds.AdropErrorCode) {
+        print("onAdFailedToReceive: \(ad.unitId) error: \(AdropErrorCodeToString(code: errorCode))")
+    }
+    
+    func onAdImpression(_ ad: AdropSplashAd) {
+        print("onAdImpression: \(ad.unitId)")
     }
 }

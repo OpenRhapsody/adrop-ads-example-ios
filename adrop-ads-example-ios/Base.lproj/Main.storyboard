@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vhs-P5-Ilr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vhs-P5-Ilr">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="Adrop Examples" id="0Dg-Vd-r0F">
+                            <tableViewSection headerTitle="Adrop Examples" footerTitle="" id="0Dg-Vd-r0F">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="n50-vD-nrw" style="IBUITableViewCellStyleDefault" id="J4D-Jc-eDS">
                                         <rect key="frame" x="0.0" y="50" width="393" height="60"/>
@@ -27,7 +27,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Banner Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n50-vD-nrw">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Banner Ad Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n50-vD-nrw">
                                                     <rect key="frame" x="20" y="0.0" width="334.66666666666669" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -47,7 +47,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Interstitial Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oBi-tI-j4T">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Interstitial Ad Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oBi-tI-j4T">
                                                     <rect key="frame" x="20" y="0.0" width="334.66666666666669" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -67,7 +67,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Rewarded Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EdY-0h-hg5">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Rewarded Ad Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EdY-0h-hg5">
                                                     <rect key="frame" x="20" y="0.0" width="334.66666666666669" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -98,6 +98,26 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="Caj-pJ-XMV" kind="show" id="Zhz-TL-DSv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="hG3-TM-Oz9" style="IBUITableViewCellStyleDefault" id="IMt-t3-OMF">
+                                        <rect key="frame" x="0.0" y="290" width="393" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IMt-t3-OMF" id="AKg-2u-gwG">
+                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Popup Ad Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hG3-TM-Oz9">
+                                                    <rect key="frame" x="20" y="0.0" width="334.66666666666669" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vl5-1f-T6V" kind="show" id="jv7-be-hyP"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -161,22 +181,22 @@
             <objects>
                 <viewController id="Caj-pJ-XMV" customClass="NativeAdFeedViewController" customModule="adrop_ads_example_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S1U-CB-hWb">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="1560"/>
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="830"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LWb-fz-rGd">
-                                <rect key="frame" x="0.0" y="103" width="393" height="1457"/>
+                                <rect key="frame" x="0.0" y="103" width="357" height="727"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedAdTableViewCell" rowHeight="600" id="kUT-PN-TJo" customClass="FeedContentTableViewCell" customModule="adrop_ads_example_ios" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="600"/>
+                                        <rect key="frame" x="0.0" y="50" width="357" height="600"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kUT-PN-TJo" id="Fks-NM-1bq">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="600"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="357" height="600"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ml8-El-1T8" customClass="AdropNativeAdView" customModule="AdropAds">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="600"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="357" height="600"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lq3-kq-YIj">
                                                             <rect key="frame" x="12" y="12" width="38" height="38"/>
@@ -186,7 +206,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QJ-21-M0l">
-                                                            <rect key="frame" x="62" y="13" width="319" height="17"/>
+                                                            <rect key="frame" x="62" y="13" width="283" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -198,13 +218,13 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFD-sE-phR">
-                                                            <rect key="frame" x="15" y="571" width="363" height="17"/>
+                                                            <rect key="frame" x="15" y="571" width="327" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWD-sW-gKd">
-                                                            <rect key="frame" x="15" y="62" width="363" height="497"/>
+                                                            <rect key="frame" x="15" y="62" width="327" height="497"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         </view>
                                                     </subviews>
@@ -250,10 +270,10 @@
                                 </connections>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="fBU-gL-d12">
-                                <rect key="frame" x="186.66666666666666" y="143" width="20" height="20"/>
+                                <rect key="frame" x="168.66666666666666" y="143" width="20" height="20"/>
                             </activityIndicatorView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fla-Xh-qiw">
-                                <rect key="frame" x="15" y="143" width="363" height="0.0"/>
+                                <rect key="frame" x="15" y="143" width="327" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -274,7 +294,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Native Ad (Feed) Example" id="kTK-bF-9lo"/>
-                    <size key="freeformSize" width="393" height="1560"/>
+                    <size key="freeformSize" width="357" height="830"/>
                     <connections>
                         <outlet property="activityIndicator" destination="fBU-gL-d12" id="aAG-au-8Lk"/>
                         <outlet property="errorMessageLabel" destination="Fla-Xh-qiw" id="Xfo-ya-Fmd"/>
@@ -283,7 +303,104 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VyJ-dO-j5c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3695" y="472"/>
+            <point key="canvasLocation" x="3688.5496183206105" y="214.08450704225353"/>
+        </scene>
+        <!--PopupAd Example-->
+        <scene sceneID="TNw-o5-4Bq">
+            <objects>
+                <viewController id="vl5-1f-T6V" customClass="PopupAdViewController" customModule="adrop_ads_example_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SYN-PO-xNQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="A2K-nR-PbA">
+                                <rect key="frame" x="32" y="231" width="329" height="52"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foH-Ut-du5">
+                                        <rect key="frame" x="0.0" y="0.0" width="148.66666666666666" height="52"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Load"/>
+                                        <connections>
+                                            <action selector="tapLoadButtonBottomType:" destination="vl5-1f-T6V" eventType="touchUpInside" id="bJX-iH-Eww"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fv-UN-42L">
+                                        <rect key="frame" x="180.66666666666663" y="0.0" width="148.33333333333337" height="52"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Show"/>
+                                        <connections>
+                                            <action selector="tapShowButtonBottomType:" destination="vl5-1f-T6V" eventType="touchUpInside" id="ALg-Zl-loa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="hei-d9-ixa"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PopupAd - Bottom Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROb-ua-1i9">
+                                <rect key="frame" x="32" y="198.66666666666666" width="183" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="jbT-y4-5i1">
+                                <rect key="frame" x="32" y="355.33333333333331" width="329" height="52"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7B-Pf-S3F">
+                                        <rect key="frame" x="0.0" y="0.0" width="148.66666666666666" height="52"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Load"/>
+                                        <connections>
+                                            <action selector="tapLoadButtonCenterType:" destination="vl5-1f-T6V" eventType="touchUpInside" id="GcR-cp-Nh9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGj-Z8-BpL">
+                                        <rect key="frame" x="180.66666666666663" y="0.0" width="148.33333333333337" height="52"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Show"/>
+                                        <connections>
+                                            <action selector="tapShowButtonCenterType:" destination="vl5-1f-T6V" eventType="touchUpInside" id="G0w-7L-Nv7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="psT-fF-mmA"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PopupAd - Center Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVV-26-Ra4">
+                                <rect key="frame" x="32" y="323" width="178.66666666666666" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R1o-U7-xqK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jbT-y4-5i1" firstAttribute="top" secondItem="uVV-26-Ra4" secondAttribute="bottom" constant="12" id="MCL-zi-e7O"/>
+                            <constraint firstItem="A2K-nR-PbA" firstAttribute="top" secondItem="ROb-ua-1i9" secondAttribute="bottom" constant="12" id="OiX-DW-pAY"/>
+                            <constraint firstItem="uVV-26-Ra4" firstAttribute="leading" secondItem="R1o-U7-xqK" secondAttribute="leading" constant="32" id="P7d-34-fal"/>
+                            <constraint firstItem="jbT-y4-5i1" firstAttribute="leading" secondItem="R1o-U7-xqK" secondAttribute="leading" constant="32" id="Pmd-9Y-7XT"/>
+                            <constraint firstItem="A2K-nR-PbA" firstAttribute="top" secondItem="R1o-U7-xqK" secondAttribute="top" constant="128" id="R2u-ll-za8"/>
+                            <constraint firstItem="ROb-ua-1i9" firstAttribute="leading" secondItem="R1o-U7-xqK" secondAttribute="leading" constant="32" id="WtB-Wo-iSW"/>
+                            <constraint firstItem="jbT-y4-5i1" firstAttribute="top" secondItem="uVV-26-Ra4" secondAttribute="bottom" constant="12" id="c1W-7R-zeD"/>
+                            <constraint firstItem="A2K-nR-PbA" firstAttribute="leading" secondItem="R1o-U7-xqK" secondAttribute="leading" constant="32" id="mt6-mG-Tbf"/>
+                            <constraint firstItem="uVV-26-Ra4" firstAttribute="top" secondItem="A2K-nR-PbA" secondAttribute="bottom" constant="40" id="rE6-7d-2Fe"/>
+                            <constraint firstItem="R1o-U7-xqK" firstAttribute="trailing" secondItem="A2K-nR-PbA" secondAttribute="trailing" constant="32" id="vQe-bI-FOZ"/>
+                            <constraint firstItem="R1o-U7-xqK" firstAttribute="trailing" secondItem="jbT-y4-5i1" secondAttribute="trailing" constant="32" id="zcg-PQ-ywD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PopupAd Example" id="qkf-1o-UN8"/>
+                    <connections>
+                        <outlet property="loadButtonBottomType" destination="foH-Ut-du5" id="tYP-cz-nRZ"/>
+                        <outlet property="loadButtonCenterType" destination="A7B-Pf-S3F" id="3Jl-Gk-fyD"/>
+                        <outlet property="showButtonBottomType" destination="6Fv-UN-42L" id="Gwb-dF-nb9"/>
+                        <outlet property="showButtonCenterType" destination="jGj-Z8-BpL" id="Mk1-b9-tFQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ieh-9M-lkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6054" y="-509"/>
         </scene>
         <!--Interstitial Example-->
         <scene sceneID="U1s-eT-Px1">
