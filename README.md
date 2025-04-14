@@ -87,9 +87,34 @@ popupAd.load()
 ### Splash Ad
 
 ```swift
-let splashAd = AdropSplashAd(adUnitID: "YOUR_AD_UNIT_ID")
-splashAd.delegate = self
-splashAd.load()
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+    var window: UIWindow?
+
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        self.window = UIWindow(windowScene: windowScene)
+        
+        let splashViewController = AdropSplashAdViewController(unitId: "PUBLIC_TEST_UNIT_ID_SPLASH")
+        splashViewController.backgroundColor = .systemBackground
+        splashViewController.logoImage = UIImage(named: "splash_logo")
+        splashViewController.mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        splashViewController.delegate = self
+        
+        self.window?.rootViewController = splashViewController
+        self.window?.makeKeyAndVisible()
+    }
+    // ...
+}
+
+```
+
+### Quest Banner
+```swift
+let feedBanner = AdropQuestBanner(channel: "YOUR_CHANNEL_ID", format: .FEED)
+feedBanner.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: 265)
+feedBanner.delegate = self
+feedBanner.load()
 ```
 
 ## 🧪 Testing Ads
