@@ -11,14 +11,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    AdropBanner *bannerView = [[AdropBanner alloc] initWithUnitId:@"ADROP_PUBLIC_TEST_UNIT_ID"];
+     
+    AdropBanner *bannerView = [[AdropBanner alloc] initWithUnitId:@"PUBLIC_TEST_UNIT_ID_375_80"];
+    bannerView.frame = self.adContainerNormal.bounds;
     bannerView.delegate = self;
     [bannerView load];
-    [self.adContainer addSubview:bannerView];
-    bannerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    bannerView.translatesAutoresizingMaskIntoConstraints = NO;
-    bannerView.frame = self.adContainer.bounds;
+    [self.adContainerNormal addSubview: bannerView];
+    
+    AdropBanner *carouselBannerView = [[AdropBanner alloc] initWithUnitId:@"PUBLIC_TEST_UNIT_ID_CAROUSEL"];
+    carouselBannerView.frame = self.adContainerNormal.bounds;
+    carouselBannerView.delegate = self;
+    [carouselBannerView load];
+    [self.adContainerCarousel addSubview: carouselBannerView];
 }
 
 #pragma mark - AdropBannerDelegate

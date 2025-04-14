@@ -91,3 +91,5 @@ iOSInjectionProject/
 
 Pods/
 Podfile.lock
+
+.idea

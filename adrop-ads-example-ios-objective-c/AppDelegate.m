@@ -17,7 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [Adrop initializeWithProduction: false];
+    [Adrop initializeWithProduction: false useInAppBrowser: false targetCountries: nil];
+    
     return YES;
 }
 

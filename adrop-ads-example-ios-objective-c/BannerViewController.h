@@ -13,7 +13,8 @@
 
 @interface BannerViewController : UIViewController <AdropBannerDelegate>
 
-@property (weak, nonatomic) IBOutlet UIView *adContainer;
+@property (weak, nonatomic) IBOutlet UIView *adContainerNormal;
+@property (weak, nonatomic) IBOutlet UIView *adContainerCarousel;
 
 @end
 

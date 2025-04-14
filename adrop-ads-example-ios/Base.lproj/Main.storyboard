@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vhs-P5-Ilr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vhs-P5-Ilr">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -120,6 +120,26 @@
                                             <segue destination="vl5-1f-T6V" kind="show" id="jv7-be-hyP"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="8AA-Zj-erR" style="IBUITableViewCellStyleDefault" id="EAl-2M-Fvy">
+                                        <rect key="frame" x="0.0" y="350" width="393" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EAl-2M-Fvy" id="Qgw-tb-5nx">
+                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Quest Banner Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8AA-Zj-erR">
+                                                    <rect key="frame" x="20" y="0.0" width="334.66666666666669" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5sg-II-0mg" kind="show" id="BaH-fM-WJK"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -143,10 +163,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xim-JB-k5L">
-                                <rect key="frame" x="0.0" y="768" width="393" height="84"/>
+                                <rect key="frame" x="0.0" y="738" width="393" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad Container View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLd-RH-R4E">
-                                        <rect key="frame" x="122.66666666666669" y="23.666666666666629" width="148" height="21"/>
+                                        <rect key="frame" x="122.66666666666669" y="21.666666666666629" width="148" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -157,24 +177,51 @@
                                     <constraint firstItem="sLd-RH-R4E" firstAttribute="centerX" secondItem="Xim-JB-k5L" secondAttribute="centerX" id="RN6-Qp-Q1z"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTU-Nf-gF3">
+                                <rect key="frame" x="0.0" y="587" width="393" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="BgE-jo-6VZ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banner - Carousel type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6od-qh-6t6">
+                                <rect key="frame" x="16" y="701" width="176" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banner - Normal type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiq-h6-xzM">
+                                <rect key="frame" x="16" y="550" width="164" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xim-JB-k5L" secondAttribute="top" constant="50" id="978-eA-Jfh"/>
+                            <constraint firstItem="yTU-Nf-gF3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Bh-zK-V34"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xim-JB-k5L" secondAttribute="top" constant="80" id="978-eA-Jfh"/>
+                            <constraint firstItem="6od-qh-6t6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="OeW-iB-rOP"/>
+                            <constraint firstItem="yTU-Nf-gF3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ph6-Rj-vqI"/>
                             <constraint firstItem="Xim-JB-k5L" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="S0d-E2-6o9"/>
-                            <constraint firstAttribute="bottom" secondItem="Xim-JB-k5L" secondAttribute="bottom" id="dcu-HX-I9i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xim-JB-k5L" secondAttribute="bottom" id="dcu-HX-I9i"/>
+                            <constraint firstItem="Xim-JB-k5L" firstAttribute="top" secondItem="6od-qh-6t6" secondAttribute="bottom" constant="16" id="f3d-JG-yQ8"/>
                             <constraint firstItem="Xim-JB-k5L" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="f7G-Yn-qbB"/>
+                            <constraint firstItem="qiq-h6-xzM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gTB-J2-HTS"/>
+                            <constraint firstItem="yTU-Nf-gF3" firstAttribute="top" secondItem="qiq-h6-xzM" secondAttribute="bottom" constant="16" id="mny-Au-Utl"/>
+                            <constraint firstItem="6od-qh-6t6" firstAttribute="top" secondItem="yTU-Nf-gF3" secondAttribute="bottom" constant="34" id="xlj-T1-H66"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Banner Example" id="R3y-jr-lyK"/>
                     <connections>
-                        <outlet property="adContainer" destination="Xim-JB-k5L" id="9n6-I0-SH1"/>
+                        <outlet property="adContainerCarousel" destination="Xim-JB-k5L" id="9n6-I0-SH1"/>
+                        <outlet property="adContainerNormal" destination="yTU-Nf-gF3" id="sRx-QW-JbT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3698" y="-509"/>
+            <point key="canvasLocation" x="3696.9465648854962" y="-509.15492957746483"/>
         </scene>
         <!--Native Ad (Feed) Example-->
         <scene sceneID="rC7-KI-oRy">
@@ -304,6 +351,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VyJ-dO-j5c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3688.5496183206105" y="214.08450704225353"/>
+        </scene>
+        <!--Quest Banner View Controller-->
+        <scene sceneID="Tph-cj-P9J">
+            <objects>
+                <viewController id="5sg-II-0mg" customClass="QuestBannerViewController" customModule="adrop_ads_example_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AiZ-N9-IXx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQj-hR-MSU">
+                                <rect key="frame" x="0.0" y="203" width="393" height="265"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="aXj-ki-VIm"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBz-kz-HvF">
+                                <rect key="frame" x="0.0" y="512" width="393" height="74"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="JIM-Gr-kqD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4CH-19-BYD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rQj-hR-MSU" firstAttribute="leading" secondItem="4CH-19-BYD" secondAttribute="leading" id="0oh-G7-bWi"/>
+                            <constraint firstItem="NBz-kz-HvF" firstAttribute="leading" secondItem="4CH-19-BYD" secondAttribute="leading" id="4LQ-y7-uWR"/>
+                            <constraint firstItem="rQj-hR-MSU" firstAttribute="trailing" secondItem="4CH-19-BYD" secondAttribute="trailing" id="8j8-Gf-wgk"/>
+                            <constraint firstItem="NBz-kz-HvF" firstAttribute="top" secondItem="rQj-hR-MSU" secondAttribute="bottom" constant="44" id="F7V-49-1to"/>
+                            <constraint firstItem="rQj-hR-MSU" firstAttribute="top" secondItem="4CH-19-BYD" secondAttribute="top" constant="100" id="K8a-Rk-DRH"/>
+                            <constraint firstItem="NBz-kz-HvF" firstAttribute="trailing" secondItem="4CH-19-BYD" secondAttribute="trailing" id="z36-e1-Jxx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KV7-fu-6jC"/>
+                    <connections>
+                        <outlet property="coverContainerView" destination="NBz-kz-HvF" id="aeo-PQ-xw5"/>
+                        <outlet property="feedContainerView" destination="rQj-hR-MSU" id="QEb-Z0-h7f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o4M-U6-Tl9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4432.8244274809158" y="222.53521126760563"/>
         </scene>
         <!--PopupAd Example-->
         <scene sceneID="TNw-o5-4Bq">

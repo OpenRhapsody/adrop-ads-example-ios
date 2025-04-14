@@ -9,18 +9,23 @@ import UIKit
 import AdropAds
 
 class BannerViewController: UIViewController {
-    @IBOutlet weak var adContainer: UIView!
+    @IBOutlet weak var adContainerNormal: UIView!
+    @IBOutlet weak var adContainerCarousel: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let bannerView = AdropBanner(unitId: "ADROP_PUBLIC_TEST_UNIT_ID")
-        bannerView.delegate = self
-        bannerView.load()
-        adContainer.addSubview(bannerView)
-        bannerView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        bannerView.translatesAutoresizingMaskIntoConstraints = false
-        bannerView.frame = adContainer.bounds
+        let banner = AdropBanner(unitId: "PUBLIC_TEST_UNIT_ID_375_80")
+        banner.frame = adContainerNormal.bounds
+        banner.delegate = self
+        banner.load()
+        adContainerNormal.addSubview(banner)
+        
+        let carouselBanner = AdropBanner(unitId: "PUBLIC_TEST_UNIT_ID_CAROUSEL")
+        carouselBanner.frame = adContainerCarousel.bounds
+        carouselBanner.delegate = self
+        carouselBanner.load()
+        adContainerCarousel.addSubview(carouselBanner)
     }
 }
 

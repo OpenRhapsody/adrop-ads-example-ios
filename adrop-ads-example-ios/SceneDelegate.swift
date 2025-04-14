@@ -20,7 +20,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         splashViewController.backgroundColor = .systemBackground
         splashViewController.logoImage = UIImage(named: "splash_logo")
         splashViewController.mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-        splashViewController.displayDuration = 3
         splashViewController.delegate = self
         
         self.window?.rootViewController = splashViewController

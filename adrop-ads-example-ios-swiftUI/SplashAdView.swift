@@ -21,8 +21,6 @@ struct SplashAdView: UIViewRepresentable {
     func makeUIView(context: Context) -> UIView {
         splashVC.backgroundColor = .white
         splashVC.logoImage = UIImage(named: "splash_logo")
-
-        splashVC.displayDuration = 1    // 스플래시 광고 노출시간 입니다. 0.5~3 사이의 값을 입력하실 수 있습니다.
         splashVC.delegate = context.coordinator
         
         return splashVC.view
