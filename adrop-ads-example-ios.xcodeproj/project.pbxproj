@@ -15,9 +15,6 @@
 		ABE611502B0482E8007AF8A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE6114F2B0482E8007AF8A4 /* Assets.xcassets */; };
 		ABE611532B0482E8007AF8A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE611522B0482E8007AF8A4 /* Preview Assets.xcassets */; };
 		ABE611582B048676007AF8A4 /* adrop_service.json in Resources */ = {isa = PBXBuildFile; fileRef = ABE611572B048676007AF8A4 /* adrop_service.json */; };
-		B3010B5B2DAC9FC4003CCB06 /* QuestBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3010B5A2DAC9FBA003CCB06 /* QuestBannerViewController.swift */; };
-		B3010B5F2DACA352003CCB06 /* QuestBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3010B5E2DACA352003CCB06 /* QuestBannerViewController.m */; };
-		B3010B642DACA8B9003CCB06 /* QuestBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3010B632DACA8B0003CCB06 /* QuestBannerView.swift */; };
 		B32C520F2B0370730051B354 /* adrop_service.json in Resources */ = {isa = PBXBuildFile; fileRef = B3DC36A72B035F9E006D5848 /* adrop_service.json */; };
 		B36A475E2B57A775002ADE23 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36A475D2B57A775002ADE23 /* BannerViewController.swift */; };
 		B36A47602B57AC18002ADE23 /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36A475F2B57AC18002ADE23 /* InterstitialViewController.swift */; };
@@ -66,11 +63,7 @@
 		ABE6114F2B0482E8007AF8A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABE611522B0482E8007AF8A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ABE611572B048676007AF8A4 /* adrop_service.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adrop_service.json; sourceTree = "<group>"; };
-		B3010B5A2DAC9FBA003CCB06 /* QuestBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestBannerViewController.swift; sourceTree = "<group>"; };
-		B3010B5E2DACA352003CCB06 /* QuestBannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestBannerViewController.m; sourceTree = "<group>"; };
-		B3010B602DACA35A003CCB06 /* QuestBannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestBannerViewController.h; sourceTree = "<group>"; };
 		B3010B612DACA86A003CCB06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3010B632DACA8B0003CCB06 /* QuestBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestBannerView.swift; sourceTree = "<group>"; };
 		B36A475D2B57A775002ADE23 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 		B36A475F2B57AC18002ADE23 /* InterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
 		B36A47612B57B41E002ADE23 /* RewardedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedViewController.swift; sourceTree = "<group>"; };
@@ -179,7 +172,6 @@
 				ABE6114D2B0482E7007AF8A4 /* ContentView.swift */,
 				B3E824762C880B5A0056836C /* SplashAdView.swift */,
 				B3E824742C8806090056836C /* BannerView.swift */,
-				B3010B632DACA8B0003CCB06 /* QuestBannerView.swift */,
 				B3E824702C88057A0056836C /* InterstitialAdView.swift */,
 				B3E824722C8805B10056836C /* RewardedAdView.swift */,
 				B3E8247D2C8828430056836C /* NativeAdView.swift */,
@@ -234,7 +226,6 @@
 				B36A475D2B57A775002ADE23 /* BannerViewController.swift */,
 				B36A475F2B57AC18002ADE23 /* InterstitialViewController.swift */,
 				B36A47612B57B41E002ADE23 /* RewardedViewController.swift */,
-				B3010B5A2DAC9FBA003CCB06 /* QuestBannerViewController.swift */,
 				B3E8246E2C87FA970056836C /* PopupAdViewController.swift */,
 				B3F9C3292B7B2C9E005AF2DA /* native-ad */,
 				B3DC36752B0352A4006D5848 /* Main.storyboard */,
@@ -261,8 +252,6 @@
 				B36A47662B57C704002ADE23 /* InterstitialViewController.m */,
 				B36A47692B57C7CE002ADE23 /* RewardedViewController.h */,
 				B36A476A2B57C7DB002ADE23 /* RewardedViewController.m */,
-				B3010B602DACA35A003CCB06 /* QuestBannerViewController.h */,
-				B3010B5E2DACA352003CCB06 /* QuestBannerViewController.m */,
 				B3DC36A82B035FA5006D5848 /* Main.storyboard */,
 				B3DC36972B035BF2006D5848 /* Assets.xcassets */,
 				B3DC36992B035BF2006D5848 /* LaunchScreen.storyboard */,
@@ -565,7 +554,6 @@
 				B3E8247C2C8824A80056836C /* UIApplication+rootViewController.swift in Sources */,
 				ABE6114E2B0482E7007AF8A4 /* ContentView.swift in Sources */,
 				B3E824732C8805B10056836C /* RewardedAdView.swift in Sources */,
-				B3010B642DACA8B9003CCB06 /* QuestBannerView.swift in Sources */,
 				B3E8247A2C8817880056836C /* PopupAdView.swift in Sources */,
 				B3E824712C88057A0056836C /* InterstitialAdView.swift in Sources */,
 				B3E824772C880B5A0056836C /* SplashAdView.swift in Sources */,
@@ -581,7 +569,6 @@
 			files = (
 				B3DC36742B0352A4006D5848 /* ViewController.swift in Sources */,
 				B3DC36702B0352A4006D5848 /* AppDelegate.swift in Sources */,
-				B3010B5B2DAC9FC4003CCB06 /* QuestBannerViewController.swift in Sources */,
 				B36A47622B57B41E002ADE23 /* RewardedViewController.swift in Sources */,
 				B3F9C32D2B7C7641005AF2DA /* FeedContentTableViewCell.swift in Sources */,
 				B3E8246F2C87FA970056836C /* PopupAdViewController.swift in Sources */,
@@ -602,7 +589,6 @@
 				B36A476B2B57C7DB002ADE23 /* RewardedViewController.m in Sources */,
 				B3DC369E2B035BF2006D5848 /* main.m in Sources */,
 				B3DC36902B035BF1006D5848 /* SceneDelegate.m in Sources */,
-				B3010B5F2DACA352003CCB06 /* QuestBannerViewController.m in Sources */,
 				B36A47672B57C704002ADE23 /* InterstitialViewController.m in Sources */,
 				B36A47642B57C3B6002ADE23 /* BannerViewController.m in Sources */,
 			);

@@ -14,20 +14,10 @@ struct adrop_ads_example_ios_swiftUIApp: App {
         Adrop.initialize(production: false)
     }
     
-    @State private var showMainView = false
     var body: some Scene {
         WindowGroup {
-            if showMainView {
-                ContentView()
-                    .buttonStyle(.borderedProminent)
-            } else {
-                SplashAdView {
-                    showMainView = true
-                }
-                .edgesIgnoringSafeArea(.all)
-                .zIndex(0)
-            }
-            
+            ContentView()
+                .buttonStyle(.borderedProminent)
         }
     }
 }

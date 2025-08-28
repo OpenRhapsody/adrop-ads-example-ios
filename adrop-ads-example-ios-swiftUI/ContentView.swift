@@ -145,18 +145,48 @@ class AdropRewardedAdWrapper: AdropRewardedAdDelegate {
     }
 }
 
+struct AdFormat {
+    let title: String
+    let subtitle: String?
+    let destination: String
+    let icon: String
+}
+
 struct ContentView: View {
+    let adFormats = [
+        AdFormat(title: "배너 광고", subtitle: "다양한 크기 & 캐러셀", destination: "Banner", icon: "rectangle.split.2x1"),
+        AdFormat(title: "전면 광고", subtitle: "전체 화면 표시", destination: "Interstitial", icon: "rectangle.stack.fill"),
+        AdFormat(title: "네이티브 광고", subtitle: "피드 통합 & 커스텀 레이아웃", destination: "Native", icon: "doc.richtext"),
+        AdFormat(title: "리워드 광고", subtitle: "비디오 & 정적 보상", destination: "Rewarded", icon: "gift"),
+        AdFormat(title: "팝업 광고", subtitle: "모달 오버레이", destination: "Popup", icon: "app.badge"),
+        AdFormat(title: "스플래시 광고", subtitle: "시작 화면 통합", destination: "Splash", icon: "sun.max")
+    ]
+    
     var body: some View {
         NavigationStack {
             List {
-                NavigationLink("Banner Example", value: "Banner")
-                NavigationLink("Interstitial Ad Example", value: "Interstitial")
-                NavigationLink("Rewarded Ad Example", value: "Rewarded")
-                NavigationLink("Native Ad Example", value: "Native")
-                NavigationLink("Popup Ad Example", value: "Popup")
-                NavigationLink("Quest Banner Example", value: "QuestBanner")
+                ForEach(adFormats, id: \.title) { format in
+                    NavigationLink(value: format.destination) {
+                        HStack {
+                            Image(systemName: format.icon)
+                                .foregroundColor(.blue)
+                                .frame(width: 30, height: 30)
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text(format.title)
+                                    .font(.headline)
+                                if let subtitle = format.subtitle {
+                                    Text(subtitle)
+                                        .font(.caption)
+                                        .foregroundColor(.secondary)
+                                }
+                            }
+                            Spacer()
+                        }
+                        .padding(.vertical, 4)
+                    }
+                }
             }
-            .navigationTitle("Adrop Examples")
+            .navigationTitle("Adrop Example App")
             .navigationDestination(for: String.self) { value in
                 switch value {
                 case "Banner":
@@ -169,8 +199,8 @@ struct ContentView: View {
                     NativeAdView()
                 case "Popup":
                     PopupAdView()
-                case "QuestBanner":
-                    QuestBannerView()
+                case "Splash":
+                    SplashAdView()
                 default:
                     EmptyView()
                 }
