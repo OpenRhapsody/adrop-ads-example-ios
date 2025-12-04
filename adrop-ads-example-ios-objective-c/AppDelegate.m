@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import <AdropAds/AdropAds.h>
+#import <AdropAds/AdropAds-Swift.h>
 
 @interface AppDelegate ()
 

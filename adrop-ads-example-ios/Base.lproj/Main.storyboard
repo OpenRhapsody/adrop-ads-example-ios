@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vhs-P5-Ilr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vhs-P5-Ilr">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -120,26 +120,6 @@
                                             <segue destination="vl5-1f-T6V" kind="show" id="jv7-be-hyP"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="8AA-Zj-erR" style="IBUITableViewCellStyleDefault" id="EAl-2M-Fvy">
-                                        <rect key="frame" x="0.0" y="350" width="393" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EAl-2M-Fvy" id="Qgw-tb-5nx">
-                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Quest Banner Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8AA-Zj-erR">
-                                                    <rect key="frame" x="20" y="0.0" width="334.66666666666669" height="60"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="5sg-II-0mg" kind="show" id="BaH-fM-WJK"/>
-                                        </connections>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -228,7 +208,7 @@
             <objects>
                 <viewController id="Caj-pJ-XMV" customClass="NativeAdFeedViewController" customModule="adrop_ads_example_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S1U-CB-hWb">
-                        <rect key="frame" x="0.0" y="0.0" width="357" height="830"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LWb-fz-rGd">
@@ -351,50 +331,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VyJ-dO-j5c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3688.5496183206105" y="214.08450704225353"/>
-        </scene>
-        <!--Quest Banner View Controller-->
-        <scene sceneID="Tph-cj-P9J">
-            <objects>
-                <viewController id="5sg-II-0mg" customClass="QuestBannerViewController" customModule="adrop_ads_example_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AiZ-N9-IXx">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQj-hR-MSU">
-                                <rect key="frame" x="0.0" y="203" width="393" height="265"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="265" id="aXj-ki-VIm"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBz-kz-HvF">
-                                <rect key="frame" x="0.0" y="512" width="393" height="74"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="JIM-Gr-kqD"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="4CH-19-BYD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="rQj-hR-MSU" firstAttribute="leading" secondItem="4CH-19-BYD" secondAttribute="leading" id="0oh-G7-bWi"/>
-                            <constraint firstItem="NBz-kz-HvF" firstAttribute="leading" secondItem="4CH-19-BYD" secondAttribute="leading" id="4LQ-y7-uWR"/>
-                            <constraint firstItem="rQj-hR-MSU" firstAttribute="trailing" secondItem="4CH-19-BYD" secondAttribute="trailing" id="8j8-Gf-wgk"/>
-                            <constraint firstItem="NBz-kz-HvF" firstAttribute="top" secondItem="rQj-hR-MSU" secondAttribute="bottom" constant="44" id="F7V-49-1to"/>
-                            <constraint firstItem="rQj-hR-MSU" firstAttribute="top" secondItem="4CH-19-BYD" secondAttribute="top" constant="100" id="K8a-Rk-DRH"/>
-                            <constraint firstItem="NBz-kz-HvF" firstAttribute="trailing" secondItem="4CH-19-BYD" secondAttribute="trailing" id="z36-e1-Jxx"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="KV7-fu-6jC"/>
-                    <connections>
-                        <outlet property="coverContainerView" destination="NBz-kz-HvF" id="aeo-PQ-xw5"/>
-                        <outlet property="feedContainerView" destination="rQj-hR-MSU" id="QEb-Z0-h7f"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o4M-U6-Tl9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4432.8244274809158" y="222.53521126760563"/>
         </scene>
         <!--PopupAd Example-->
         <scene sceneID="TNw-o5-4Bq">
@@ -600,7 +536,7 @@
             <objects>
                 <navigationController title="Adrop" id="vhs-P5-Ilr" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VSF-x4-RXt">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

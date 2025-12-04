@@ -12,13 +12,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
      
-    AdropBanner *bannerView = [[AdropBanner alloc] initWithUnitId:@"PUBLIC_TEST_UNIT_ID_375_80"];
+    AdropBanner *bannerView = [[AdropBanner alloc] initWithUnitId:@"PUBLIC_TEST_UNIT_ID_375_80" contextId: @""];
     bannerView.frame = self.adContainerNormal.bounds;
     bannerView.delegate = self;
     [bannerView load];
     [self.adContainerNormal addSubview: bannerView];
     
-    AdropBanner *carouselBannerView = [[AdropBanner alloc] initWithUnitId:@"PUBLIC_TEST_UNIT_ID_CAROUSEL"];
+    AdropBanner *carouselBannerView = [[AdropBanner alloc] initWithUnitId:@"PUBLIC_TEST_UNIT_ID_CAROUSEL" contextId: @""];
     carouselBannerView.frame = self.adContainerNormal.bounds;
     carouselBannerView.delegate = self;
     [carouselBannerView load];

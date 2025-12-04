@@ -154,7 +154,6 @@ struct ContentView: View {
                 NavigationLink("Rewarded Ad Example", value: "Rewarded")
                 NavigationLink("Native Ad Example", value: "Native")
                 NavigationLink("Popup Ad Example", value: "Popup")
-                NavigationLink("Quest Banner Example", value: "QuestBanner")
             }
             .navigationTitle("Adrop Examples")
             .navigationDestination(for: String.self) { value in
@@ -169,8 +168,6 @@ struct ContentView: View {
                     NativeAdView()
                 case "Popup":
                     PopupAdView()
-                case "QuestBanner":
-                    QuestBannerView()
                 default:
                     EmptyView()
                 }
