@@ -23,6 +23,7 @@
 		B36A47642B57C3B6002ADE23 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A47632B57C3B6002ADE23 /* BannerViewController.m */; };
 		B36A47672B57C704002ADE23 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A47662B57C704002ADE23 /* InterstitialViewController.m */; };
 		B36A476B2B57C7DB002ADE23 /* RewardedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A476A2B57C7DB002ADE23 /* RewardedViewController.m */; };
+		B382466B2EE15C1A0023943E /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B382466A2EE15C1A0023943E /* SplashViewController.m */; };
 		B3DC36702B0352A4006D5848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC366F2B0352A4006D5848 /* AppDelegate.swift */; };
 		B3DC36722B0352A4006D5848 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC36712B0352A4006D5848 /* SceneDelegate.swift */; };
 		B3DC36742B0352A4006D5848 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC36732B0352A4006D5848 /* ViewController.swift */; };
@@ -76,6 +77,8 @@
 		B36A47682B57C712002ADE23 /* InterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
 		B36A47692B57C7CE002ADE23 /* RewardedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardedViewController.h; sourceTree = "<group>"; };
 		B36A476A2B57C7DB002ADE23 /* RewardedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewardedViewController.m; sourceTree = "<group>"; };
+		B38246692EE15C1A0023943E /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		B382466A2EE15C1A0023943E /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		B3DC366C2B0352A4006D5848 /* adrop-ads-example-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "adrop-ads-example-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DC366F2B0352A4006D5848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3DC36712B0352A4006D5848 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -249,6 +252,8 @@
 				B3DC368C2B035BF1006D5848 /* AppDelegate.m */,
 				B3DC368E2B035BF1006D5848 /* SceneDelegate.h */,
 				B3DC368F2B035BF1006D5848 /* SceneDelegate.m */,
+				B38246692EE15C1A0023943E /* SplashViewController.h */,
+				B382466A2EE15C1A0023943E /* SplashViewController.m */,
 				B3DC36912B035BF1006D5848 /* ViewController.h */,
 				B3DC36922B035BF1006D5848 /* ViewController.m */,
 				B36A47652B57C49D002ADE23 /* BannerViewController.h */,
@@ -483,9 +488,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios-swiftUI/Pods-adrop-ads-example-ios-swiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios-swiftUI/Pods-adrop-ads-example-ios-swiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -500,9 +509,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios-objective-c/Pods-adrop-ads-example-ios-objective-c-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios-objective-c/Pods-adrop-ads-example-ios-objective-c-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -517,9 +530,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios/Pods-adrop-ads-example-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-adrop-ads-example-ios/Pods-adrop-ads-example-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -593,6 +610,7 @@
 				B3DC36932B035BF1006D5848 /* ViewController.m in Sources */,
 				B3DC368D2B035BF1006D5848 /* AppDelegate.m in Sources */,
 				B36A476B2B57C7DB002ADE23 /* RewardedViewController.m in Sources */,
+				B382466B2EE15C1A0023943E /* SplashViewController.m in Sources */,
 				B3DC369E2B035BF2006D5848 /* main.m in Sources */,
 				B3DC36902B035BF1006D5848 /* SceneDelegate.m in Sources */,
 				B36A47672B57C704002ADE23 /* InterstitialViewController.m in Sources */,

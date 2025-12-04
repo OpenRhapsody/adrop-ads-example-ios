@@ -23,7 +23,7 @@ pod install
 In Xcode, open your project and go to `File > Add Packages`, then enter the following URL:
 
 ```
-https://github.com/OpenRhapsody/adrop-ads-example-ios.git
+https://github.com/OpenRhapsody/adrop-ads-pod.git
 ```
 
 ## ⚙️ Initialization
@@ -106,16 +106,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     // ...
 }
-
 ```
 
-### Quest Banner
-```swift
-let feedBanner = AdropQuestBanner(channel: "YOUR_CHANNEL_ID", format: .FEED)
-feedBanner.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: 265)
-feedBanner.delegate = self
-feedBanner.load()
-```
 
 ## 🧪 Testing Ads
 
