@@ -11,68 +11,78 @@ import AdropAds
 class PopupAdViewController: UIViewController {
     @IBOutlet weak var loadButtonBottomType: UIButton!
     @IBOutlet weak var showButtonBottomType: UIButton!
-    
+
     @IBOutlet weak var loadButtonCenterType: UIButton!
     @IBOutlet weak var showButtonCenterType: UIButton!
-    
+
     var popupAdBottom: AdropPopupAd?
     var popupAdCenter: AdropPopupAd?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         showButtonBottomType.isEnabled = false
         showButtonCenterType.isEnabled = false
     }
-    
+
     @IBAction func tapLoadButtonBottomType(_ sender: Any) {
+        // Create bottom type popup ad instance and load.
         popupAdBottom = AdropPopupAd(unitId: "PUBLIC_TEST_UNIT_ID_POPUP_BOTTOM")
         popupAdBottom?.delegate = self
         popupAdBottom?.load()
     }
-    
+
     @IBAction func tapShowButtonBottomType(_ sender: Any) {
+        // Show the loaded bottom type popup ad.
         if popupAdBottom?.isLoaded == true {
             popupAdBottom?.show(fromRootViewController: self)
         }
-        
+
         showButtonBottomType.isEnabled = false
     }
-    
+
     @IBAction func tapLoadButtonCenterType(_ sender: Any) {
+        // Create center type popup ad instance and load.
         popupAdCenter = AdropPopupAd(unitId: "PUBLIC_TEST_UNIT_ID_POPUP_CENTER")
         popupAdCenter?.delegate = self
         popupAdCenter?.load()
     }
-    
+
     @IBAction func tapShowButtonCenterType(_ sender: Any) {
+        // Show the loaded center type popup ad.
         if popupAdCenter?.isLoaded == true {
             popupAdCenter?.show(fromRootViewController: self)
         }
-        
+
         showButtonCenterType.isEnabled = false
     }
 }
 
+// MARK: - AdropPopupAdDelegate
+
 extension PopupAdViewController: AdropPopupAdDelegate {
+    // Called when ad is successfully loaded.
     func onAdReceived(_ ad: AdropAds.AdropPopupAd) {
         print("onAdReceived: \(ad.unitId) ")
-        
+
         if ad == popupAdBottom {
             showButtonBottomType.isEnabled = true
         } else if ad == popupAdCenter {
             showButtonCenterType.isEnabled = true
         }
     }
-    
+
+    // Called when ad failed to load.
     func onAdFailedToReceive(_ ad: AdropAds.AdropPopupAd, _ errorCode: AdropAds.AdropErrorCode) {
         print("onAdFailedToReceive: \(ad.unitId) \(errorCode.keyString) ")
     }
-    
+
+    // Called when ad is displayed on screen.
     func onAdImpression(_ ad: AdropPopupAd) {
         print("onAdImpression: \(ad.unitId)")
     }
-    
+
+    // Called when ad is clicked.
     func onAdClicked(_ ad: AdropPopupAd) {
         print("onAdClicked: \(ad.unitId)")
     }

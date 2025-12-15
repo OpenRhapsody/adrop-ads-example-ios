@@ -26,8 +26,8 @@
     [self setupAdView];
 }
 
+// Set up logo image view.
 - (void)setupLogoView {
-    // 로고 이미지 뷰 설정 (상단 영역)
     self.logoImageView = [[UIImageView alloc] init];
     self.logoImageView.image = [UIImage imageNamed:@"splash_logo"];
     self.logoImageView.contentMode = UIViewContentModeScaleAspectFit;
@@ -35,7 +35,6 @@
 
     [self.view addSubview:self.logoImageView];
 
-    // 로고를 상단~중앙 영역에 배치
     [NSLayoutConstraint activateConstraints:@[
         [self.logoImageView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
         [self.logoImageView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant:100],
@@ -44,15 +43,16 @@
     ]];
 }
 
+// Set up splash ad view.
 - (void)setupAdView {
-    // AdropSplashAdView 설정 (하단 영역)
+    // Create splash ad view with unit ID.
     self.adView = [[AdropSplashAdView alloc] initWithUnitId:@"PUBLIC_TEST_UNIT_ID_SPLASH" adRequestTimeout:1];
+    // Set delegate to handle ad events.
     self.adView.delegate = self;
     self.adView.translatesAutoresizingMaskIntoConstraints = NO;
 
     [self.view addSubview:self.adView];
 
-    // 광고를 하단에 배치 (360x270 dp 권장 사이즈)
     [NSLayoutConstraint activateConstraints:@[
         [self.adView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
         [self.adView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor constant:-20],
@@ -61,9 +61,9 @@
     ]];
 }
 
+// Navigate to main view controller.
 - (void)goToMain {
     if (self.mainViewController) {
-        // 메인 화면으로 전환
         UIWindow *window = self.view.window;
         if (window) {
             [UIView transitionWithView:window
@@ -79,29 +79,34 @@
 
 #pragma mark - AdropSplashAdViewDelegate
 
+// Called when ad is successfully loaded.
 - (void)onAdReceived:(AdropSplashAdView *)adView {
     NSLog(@"SplashViewController::onAdReceived %@", adView.unitId);
 }
 
+// Called when ad failed to load.
 - (void)onAdFailedToReceive:(AdropSplashAdView *)adView error:(AdropErrorCode)errorCode {
     NSLog(@"SplashViewController::onAdFailedToReceive %@ error: %ld", adView.unitId, (long)errorCode);
 }
 
+// Called when ad is displayed on screen.
 - (void)onAdImpression:(AdropSplashAdView *)adView {
     NSLog(@"SplashViewController::onAdImpression %@", adView.unitId);
 }
 
+// Called when ad is clicked.
 - (void)onAdClicked:(AdropSplashAdView *)adView {
     NSLog(@"SplashViewController::onAdClicked %@", adView.unitId);
 }
 
+// Called when splash ad closes.
+// impressed: YES if the splash ad was displayed.
 - (void)onAdClose:(AdropSplashAdView *)adView impressed:(BOOL)impressed {
     NSLog(@"SplashViewController::onAdClose %@ impressed: %d", adView.unitId, impressed);
 
     if (self.isAdClosed) return;
     self.isAdClosed = YES;
 
-    // 광고가 노출됐으면 애니메이션, 아니면 바로 전환
     [UIView animateWithDuration:impressed ? 0.3 : 0
                      animations:^{
         self.view.alpha = 0;

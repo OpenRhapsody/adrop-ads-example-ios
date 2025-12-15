@@ -1,124 +1,57 @@
-# Adrop iOS SDK Integration Guide
+# Adrop Ads Example - iOS
 
-This document provides instructions on how to install and integrate the Adrop SDK into your iOS application.
+Example applications demonstrating how to integrate [Adrop Ads SDK](https://adrop.io) in iOS.
 
-## 📦 Installation
+Language: English | [한국어](./README.ko.md)
 
-### Using CocoaPods
+## Getting Started
 
-Add the following line to your `Podfile`:
+- [Adrop Developer Docs](https://help.adrop.io/adcontrol/developer-guide/adrop-sdk/ios-sdk) - SDK integration and advanced features
+- [Adrop Console](https://adrop.io) - Register your app and issue ad unit IDs
+- [Test Ad Unit IDs](https://help.adrop.io/adcontrol/developer-guide/test-environment#test-unit-id) - Use test IDs during development
 
-```ruby
-pod "adrop-ads"
-```
+## Examples
 
-Then run the following command in your terminal:
+### Adrop Ads
+
+|  | UIKit | SwiftUI | Objective-C |
+|--|-------|---------|-------------|
+| Banner | [Swift](adrop-ads-example-ios/BannerViewController.swift) | [SwiftUI](adrop-ads-example-ios-swiftUI/BannerView.swift) | [Objective-C](adrop-ads-example-ios-objective-c/BannerViewController.m) |
+| Interstitial | [Swift](adrop-ads-example-ios/InterstitialViewController.swift) | [SwiftUI](adrop-ads-example-ios-swiftUI/InterstitialAdView.swift) | [Objective-C](adrop-ads-example-ios-objective-c/InterstitialViewController.m) |
+| Rewarded | [Swift](adrop-ads-example-ios/RewardedViewController.swift) | [SwiftUI](adrop-ads-example-ios-swiftUI/RewardedAdView.swift) | [Objective-C](adrop-ads-example-ios-objective-c/RewardedViewController.m) |
+| Native | [Swift](adrop-ads-example-ios/native-ad/NativeAdFeedViewController.swift) | [SwiftUI](adrop-ads-example-ios-swiftUI/NativeAdView.swift) | - |
+| Popup | [Swift](adrop-ads-example-ios/PopupAdViewController.swift) | [SwiftUI](adrop-ads-example-ios-swiftUI/PopupAdView.swift) | - |
+
+### Splash
+
+|  | UIKit | SwiftUI | Objective-C |
+|--|-------|---------|-------------|
+| Splash | [SceneDelegate](adrop-ads-example-ios/SceneDelegate.swift) | [SwiftUI](adrop-ads-example-ios-swiftUI/SplashAdView.swift) | [Objective-C](adrop-ads-example-ios-objective-c/SplashViewController.m) |
+
+## How to Run
+
+### 1. Clone the repository
 
 ```bash
+git clone https://github.com/OpenRhapsody/adrop-ads-example-ios.git
+```
+
+### 2. Install dependencies
+
+```bash
+cd adrop-ads-example-ios
 pod install
 ```
 
-### Using Swift Package Manager
+### 3. Open in Xcode
 
-In Xcode, open your project and go to `File > Add Packages`, then enter the following URL:
+Open `adrop-ads-example-ios.xcworkspace` in Xcode.
 
-```
-https://github.com/OpenRhapsody/adrop-ads-pod.git
-```
+### 4. Add configuration file
 
-## ⚙️ Initialization
+Download `adrop_service.json` from [Adrop Console](https://adrop.io) and add it to your project.
 
-Initialize the Adrop SDK in your `AppDelegate.swift` or app startup logic:
+### 5. Build and run
 
-```swift
-import AdropSDK
+Build and run on a simulator or real device.
 
-func application(_ application: UIApplication,
-                 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    Adrop.initialize(production: true)
-    return true
-}
-```
-
-You can get your app key from the [Adrop Console](https://adrop.io).
-
-## 📺 Ad Types Integration
-
-### Banner Ad
-
-```swift
-let bannerAd = AdropBanner(unitID: "YOUR_AD_UNIT_ID")
-bannerAd.delegate = self
-bannerAd.load()
-```
-
-### Interstitial Ad
-
-```swift
-let interstitialAd = AdropInterstitialAd(unitID: "YOUR_AD_UNIT_ID")
-interstitialAd.delegate = self
-interstitialAd.load()
-```
-
-### Rewarded Ad
-
-```swift
-let rewardedAd = AdropRewardedAd(unitID: "YOUR_AD_UNIT_ID")
-rewardedAd.delegate = self
-rewardedAd.load()
-```
-
-### Native Ad
-
-```swift
-let nativeAd = AdropNativeAd(unitID: "YOUR_AD_UNIT_ID")
-nativeAd.delegate = self
-nativeAd.load()
-```
-
-### Popup Ad
-
-```swift
-let popupAd = AdropPopupAd(unitID: "YOUR_AD_UNIT_ID")
-popupAd.delegate = self
-popupAd.load()
-```
-
-### Splash Ad
-
-```swift
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-    var window: UIWindow?
-
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        
-        self.window = UIWindow(windowScene: windowScene)
-        
-        let splashViewController = AdropSplashAdViewController(unitId: "PUBLIC_TEST_UNIT_ID_SPLASH")
-        splashViewController.backgroundColor = .systemBackground
-        splashViewController.logoImage = UIImage(named: "splash_logo")
-        splashViewController.mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-        splashViewController.delegate = self
-        
-        self.window?.rootViewController = splashViewController
-        self.window?.makeKeyAndVisible()
-    }
-    // ...
-}
-```
-
-
-## 🧪 Testing Ads
-
-To test ads in development, use test ad unit IDs. [Adrop Test Ad Unit IDs](https://help.adrop.io/developer-guide/test-environment)
-
-## 🛠️ Additional Configuration & Support
-
-- To issue ad unit IDs and register your app, visit the [Adrop Console](https://adrop.io).
-- For AdMob adapter setup, refer to the [official Adrop guide](https://help.adrop.io/developer-guide/adrop-sdk/google-admob/adrop-adapter-guide-ios).
-- For detailed setup and advanced features, visit the [Adrop Developer Docs](https://help.adrop.io/developer-guide/adrop-sdk/ios-sdk).
-
----
-
-This guide provides basic instructions for integrating the Adrop SDK. For more information and the latest updates, please refer to the [official documentation](https://help.adrop.io/developer-guide/adrop-sdk/ios-sdk).
