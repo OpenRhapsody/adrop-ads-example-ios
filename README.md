@@ -115,7 +115,7 @@ To test ads in development, use test ad unit IDs. [Adrop Test Ad Unit IDs](https
 
 ## 🛠️ Additional Configuration & Support
 
-- To issue ad unit IDs and register your app, visit the [Adrop Console](https://adrop.io).
+- To issue ad unit IDs and register your app, visit the [Adrop Console](https://console.adrop.io).
 - For detailed setup and advanced features, visit the [Adrop Developer Docs](https://docs.adrop.io/sdk/ios).
 
 ---
