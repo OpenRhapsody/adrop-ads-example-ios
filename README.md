@@ -111,14 +111,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 ## 🧪 Testing Ads
 
-To test ads in development, use test ad unit IDs. [Adrop Test Ad Unit IDs](https://help.adrop.io/developer-guide/test-environment)
+To test ads in development, use test ad unit IDs. [Adrop Test Ad Unit IDs](https://docs.adrop.io/sdk#test-environment)
 
 ## 🛠️ Additional Configuration & Support
 
 - To issue ad unit IDs and register your app, visit the [Adrop Console](https://adrop.io).
-- For AdMob adapter setup, refer to the [official Adrop guide](https://help.adrop.io/developer-guide/adrop-sdk/google-admob/adrop-adapter-guide-ios).
-- For detailed setup and advanced features, visit the [Adrop Developer Docs](https://help.adrop.io/developer-guide/adrop-sdk/ios-sdk).
+- For detailed setup and advanced features, visit the [Adrop Developer Docs](https://docs.adrop.io/sdk/ios).
 
 ---
 
-This guide provides basic instructions for integrating the Adrop SDK. For more information and the latest updates, please refer to the [official documentation](https://help.adrop.io/developer-guide/adrop-sdk/ios-sdk).
+This guide provides basic instructions for integrating the Adrop SDK. For more information and the latest updates, please refer to the [official documentation](https://docs.adrop.io/sdk/ios).
